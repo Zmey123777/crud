@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'rest_framework',
+    'django_filters',
 
     'logistic',
 ]
@@ -80,9 +80,11 @@ WSGI_APPLICATION = 'stocks_products.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'netology_stocks_products',
-        'HOST': '127.0.0.1',
+        'NAME': 'django_db',
+        'HOST': '172.21.0.2',
         'PORT': '5432',
+        'USER': 'eim',
+        'PASSWORD': 'eim',
     }
 }
 
